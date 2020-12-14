@@ -3,7 +3,7 @@
 <html>
     <head>
         <title>My Web Server</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?202012100341">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?202012140341">
     </head>
 <body>
 
@@ -16,7 +16,7 @@
 
 {% if image != None %}
     <div style="margin-left:20%;margin-top:3%;border: 2px;">
-        <img src="{{ url_for('static', filename='tmp/' + image[0]) }}?{code}" alt="{{ image[1] }}" style="max-width:1000px;border: 5px solid #555;">
+        <img src="{{ url_for('static', filename='tmp/' + image) }}?{code}" style="max-width:1000px;border: 5px solid #555;">
     </div>
 {% endif %}
 
